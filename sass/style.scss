@@ -1,0 +1,46 @@
+@import 'variable.scss';
+ 
+ body{
+ background:$body-color;
+ }
+ .container{
+     h3{
+         padding-left: $px15;
+         margin-bottom: $px15
+     }
+     margin-top: $px50;
+     margin-bottom: $px50;
+     .cell{
+         padding-left: $px15;
+         padding-right: $px15;
+           .card{
+            @include border-radius(4px);
+           }  
+         .card-divider{
+            justify-content: center;
+            font-size: $px22;
+            margin-bottom: $px25;
+            
+         }
+         .fa-stack{
+          margin: 0 auto; 
+          margin-top: $px25;
+          i{
+            background: #007bff!important;
+            @include border-radius(50%);
+          }
+          .fa-circle{
+            transition: transform .20s ease;
+          } &:hover{
+            transform: scale(1.1); 
+            } 
+         }
+         .card-section{
+           text-align: center;  
+           h4{
+               font-weight: bold;
+           }
+         }
+     }
+}
+ 
