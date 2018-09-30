@@ -1,6 +1,6 @@
 $(document).foundation()
 
-// all elems same height, vanilla version
+// javascript virsion
 
 function sameHeights () {
 
